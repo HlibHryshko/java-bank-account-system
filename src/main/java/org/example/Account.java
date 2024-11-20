@@ -11,5 +11,13 @@ public abstract class Account {
         this.time = time;
     }
 
+    public void deposit(double amount) {
+        principal += amount;
+    }
+
+    public void withdraw(double amount) {
+        principal -= amount;
+    }
+
     public abstract double calculateInterest();
 }
